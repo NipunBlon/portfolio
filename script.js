@@ -4,15 +4,20 @@
   const ring = document.getElementById('cursor-ring');
   if (!dot || !ring) return;
 
-  let mx = window.innerWidth / 2;
-  let my = window.innerHeight / 2;
-  let rx = mx, ry = my;
+  let mx = -100, my = -100;
+  let rx = -100, ry = -100;
+  let entered = false;
 
   document.addEventListener('mousemove', e => {
     mx = e.clientX;
     my = e.clientY;
     dot.style.left = mx + 'px';
     dot.style.top  = my + 'px';
+    if (!entered) {
+      entered = true;
+      dot.classList.add('active');
+      ring.classList.add('active');
+    }
   });
 
   function animateRing() {
@@ -34,12 +39,12 @@
   });
 
   document.addEventListener('mouseleave', () => {
-    dot.style.opacity  = '0';
-    ring.style.opacity = '0';
+    dot.classList.remove('active');
+    ring.classList.remove('active');
   });
   document.addEventListener('mouseenter', () => {
-    dot.style.opacity  = '1';
-    ring.style.opacity = '1';
+    dot.classList.add('active');
+    ring.classList.add('active');
   });
 })();
 
