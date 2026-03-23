@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Nipun Blon — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button class="ham" id="ham"><span></span><span></span><span></span></button>
+<div class="ov" id="ov"></div>
+
+<aside class="sidebar" id="sb">
+  <div class="sidebar-top">
+    <div class="profile-wrap">
+      <div class="avatar-ring"><div class="avatar-inner"><img id="av1" src="" alt="Nipun"/></div></div>
+      <div>
+        <div class="profile-name">Nipun Blon</div>
+        <div class="profile-title">Student Developer</div>
+        <div class="status-dot-wrap"><span class="sdot"></span>Open to Opportunities</div>
+      </div>
+    </div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-section-label">Navigation</div>
+    <div class="nav-item active" data-page="home" onclick="nav('home')"><span>⌂</span><span>/home</span><span class="nav-arr">→</span></div>
+    <div class="nav-item" data-page="about" onclick="nav('about')"><span>◉</span><span>/about</span><span class="nav-arr">→</span></div>
+    <div class="nav-item" data-page="skills" onclick="nav('skills')"><span>⚡</span><span>/skills</span><span class="nav-arr">→</span></div>
+    <div class="nav-item" data-page="experience" onclick="nav('experience')"><span>◈</span><span>/experience</span><span class="nav-arr">→</span></div>
+    <div class="nav-item" data-page="projects" onclick="nav('projects')"><span>◧</span><span>/projects</span><span class="nav-arr">→</span></div>
+    <div class="nav-item" data-page="blog" onclick="nav('blog')"><span>✎</span><span>/blog</span><span class="nav-arr">→</span></div>
+    <div class="nav-item" data-page="contact" onclick="nav('contact')"><span>◎</span><span>/contact</span><span class="nav-arr">→</span></div>
+  </nav>
+  <div class="sidebar-bottom">
+    <div class="sb-socials">
+      <a class="sb-social" href="https://github.com/NipunBlon" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      </a>
+      <a class="sb-social" href="mailto:nipundude2024@gmail.com">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+    <div class="sb-info">root@nipunblon<br/>Nepal &#127475;&#127477;</div>
+  </div>
+</aside>
+
+<main class="main">
+
+  <!-- HOME -->
+  <section class="section" id="home">
+    <div class="home-bg">NB</div>
+    <div class="tl"><span class="p">~$</span><span class="c">whoami</span></div>
+    <div class="htag">// Hello World &#128075;</div>
+    <h1 class="hhead">Hi, I'm<br><span class="na">Nipun Blon</span></h1>
+    <p class="hsub">Student &amp; <span class="tw" id="typed"></span><span class="cblink">|</span></p>
+    <p class="hdesc">Grade 11 Science student from Nepal, passionate about writing code and building things from scratch. Currently learning Python, C, C++ and web technologies — turning curiosity into real projects.</p>
+    <div class="hbtns">
+      <button class="btn btn-g" onclick="nav('projects')">View Projects &#8594;</button>
+      <button class="btn btn-o" onclick="nav('contact')">Get In Touch</button>
+    </div>
+    <div class="hstats">
+      <div><span class="stat-n" data-t="3">0</span><span class="stat-l">Languages</span></div>
+      <div><span class="stat-n" data-t="6">0</span><span class="stat-l">Projects</span></div>
+      <div><span class="stat-n" data-t="11">0</span><span class="stat-l">Grade</span></div>
+      <div><span class="stat-n" data-t="2">0</span><span class="stat-l">Yrs Coding</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="sec-hdr">
+      <div class="tl"><span class="p">~$</span><span class="c">cat about.md</span></div>
+      <div class="sec-ey">About Me</div>
+      <h2 class="sec-h">Who I <em>Am</em></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="about-grid">
+      <div>
+        <div class="aph"><img id="av2" src="" alt="Nipun Blon"/></div>
+        <div class="a-badges"><span class="a-badge">Grade 11</span><span class="a-badge">Science</span><span class="a-badge">Nepal</span></div>
+      </div>
+      <div>
+        <div class="abio">
+          <p>Hey! I'm Nipun — a Grade 11 student in the Science Physical Group stream with a genuine love for computers and how things work under the hood. I started coding purely out of curiosity and it quickly became one of my biggest passions.</p>
+          <p>I enjoy building things with code — from command-line programs in C and Python to web pages from scratch. I believe strongly in learning by doing, so every project I take on teaches me something new.</p>
+          <p>Outside of code, I'm working on learning guitar and piano, love playing badminton and table tennis, and enjoy going out for runs and jogs to clear my head and stay active.</p>
+        </div>
+        <div class="info-g">
+          <div class="info-i"><div class="info-k">Status</div><div class="info-v">Grade 11, Science</div></div>
+          <div class="info-i"><div class="info-k">Stream</div><div class="info-v">Physical Group</div></div>
+          <div class="info-i"><div class="info-k">Location</div><div class="info-v">Nepal &#127475;&#127477;</div></div>
+          <div class="info-i"><div class="info-k">Email</div><div class="info-v">nipundude2024</div></div>
+          <div class="info-i"><div class="info-k">GitHub</div><div class="info-v">NipunBlon</div></div>
+          <div class="info-i"><div class="info-k">Open To</div><div class="info-v">Internships &amp; Collabs</div></div>
+        </div>
+        <div class="nav-section-label" style="margin-bottom:.7rem">Hobbies &amp; Interests</div>
+        <div class="hobbies">
+          <span class="hob">&#127928; Guitar</span>
+          <span class="hob">&#127929; Piano</span>
+          <span class="hob">&#127992; Badminton</span>
+          <span class="hob">&#127955; Table Tennis</span>
+          <span class="hob">&#127939; Running</span>
+          <span class="hob">&#128187; Coding</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="sec-hdr">
+      <div class="tl"><span class="p">~$</span><span class="c">ls skills/</span></div>
+      <div class="sec-ey">Skills</div>
+      <h2 class="sec-h">My <em>Toolkit</em></h2>
+      <div class="sec-line"></div>
+      <p class="sec-desc">Technologies and languages I work with. Still learning every day — each project adds something new to the stack.</p>
+    </div>
+    <div class="skills-g" id="sg"></div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="sec-hdr">
+      <div class="tl"><span class="p">~$</span><span class="c">cat journey.log</span></div>
+      <div class="sec-ey">Experience</div>
+      <h2 class="sec-h">My <em>Journey</em></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="exp-tl">
+      <div class="exp-it">
+        <div class="exp-dot cur"></div>
+        <div class="exp-date">2024 — Present</div>
+        <div class="exp-role">Grade 11 Science Student</div>
+        <div class="exp-org">High School · Physical Group</div>
+        <div class="exp-desc">Enrolled in Science Physical Group studying Computer Science, Mathematics, and Physics. Building programming projects alongside formal academics — bridging theoretical learning with real hands-on coding every day.</div>
+        <div class="exp-tags"><span class="exp-tag">Computer Science</span><span class="exp-tag">Mathematics</span><span class="exp-tag">Physics</span></div>
+      </div>
+      <div class="exp-it">
+        <div class="exp-dot"></div>
+        <div class="exp-date">2023 — 2024</div>
+        <div class="exp-role">Self-Taught Developer</div>
+        <div class="exp-org">Personal Learning · Online Resources</div>
+        <div class="exp-desc">Started independently learning programming through free online platforms, YouTube tutorials, and official documentation. Completed beginner-to-intermediate courses in Python, C, and web development. Built first projects to apply concepts in practice.</div>
+        <div class="exp-tags"><span class="exp-tag">Python</span><span class="exp-tag">C Programming</span><span class="exp-tag">HTML/CSS</span><span class="exp-tag">Algorithms</span></div>
+      </div>
+      <div class="exp-it">
+        <div class="exp-dot"></div>
+        <div class="exp-date">2022 — 2023</div>
+        <div class="exp-role">Coding Enthusiast</div>
+        <div class="exp-org">School Computer Lab</div>
+        <div class="exp-desc">First exposure to programming through school classes. Discovered a deep interest in how computers and software work. Started exploring the basics of algorithms, logic, and simple programs — the spark that started everything.</div>
+        <div class="exp-tags"><span class="exp-tag">Basic Programming</span><span class="exp-tag">Algorithms</span><span class="exp-tag">Problem Solving</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="sec-hdr">
+      <div class="tl"><span class="p">~$</span><span class="c">ls projects/ --sort=recent</span></div>
+      <div class="sec-ey">Projects</div>
+      <h2 class="sec-h">Things I've <em>Built</em></h2>
+      <div class="sec-line"></div>
+      <p class="sec-desc">A collection of projects built while learning. Each one taught me something new about writing better, cleaner code.</p>
+    </div>
+    <div class="proj-g" id="pg"></div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="section" id="blog">
+    <div class="sec-hdr">
+      <div class="tl"><span class="p">~$</span><span class="c">cat posts.json</span></div>
+      <div class="sec-ey">Blog</div>
+      <h2 class="sec-h">My <em>Thoughts</em></h2>
+      <div class="sec-line"></div>
+      <p class="sec-desc">Writing about what I learn, explore, and find fascinating in the world of computers and technology.</p>
+    </div>
+    <div class="blog-g" id="blg"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="sec-hdr">
+      <div class="tl"><span class="p">~$</span><span class="c">./send_message.sh</span></div>
+      <div class="sec-ey">Contact</div>
+      <h2 class="sec-h">Let's <em>Connect</em></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="ct-grid">
+      <div>
+        <p class="ct-blurb">Whether it's a collaboration, an internship opportunity, or just a chat about tech and code — I'm always happy to hear from you. Reach out anytime!</p>
+        <div class="ct-items">
+          <div class="ct-row"><div class="ct-icon">&#128231;</div><div><div class="ct-lbl">Email</div><div class="ct-val">nipundude2024@gmail.com</div></div></div>
+          <div class="ct-row"><div class="ct-icon">&#128025;</div><div><div class="ct-lbl">GitHub</div><div class="ct-val">github.com/NipunBlon</div></div></div>
+          <div class="ct-row"><div class="ct-icon">&#128205;</div><div><div class="ct-lbl">Location</div><div class="ct-val">Nepal &#127475;&#127477;</div></div></div>
+          <div class="ct-row"><div class="ct-icon">&#9203;</div><div><div class="ct-lbl">Response Time</div><div class="ct-val">Within 24 hours</div></div></div>
+        </div>
+      </div>
+      <form class="ct-form" onsubmit="sendMsg(event)">
+        <div class="fr">
+          <div class="fg"><label class="fl">Name</label><input class="fi" type="text" placeholder="Your name" required/></div>
+          <div class="fg"><label class="fl">Email</label><input class="fi" type="email" placeholder="your@email.com" required/></div>
+        </div>
+        <div class="fg"><label class="fl">Subject</label><input class="fi" type="text" placeholder="What's this about?"/></div>
+        <div class="fg"><label class="fl">Message</label><textarea class="fta" placeholder="Hey Nipun, I'd like to..." required></textarea></div>
+        <button type="submit" class="btn-sub">Send Message &#8594;</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- MOBILE NAV -->
+<nav class="mob-nav">
+  <div class="mob-nav-inner">
+    <button class="mnb active" data-page="home" onclick="nav('home')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Home</button>
+    <button class="mnb" data-page="about" onclick="nav('about')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>About</button>
+    <button class="mnb" data-page="skills" onclick="nav('skills')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Skills</button>
+    <button class="mnb" data-page="projects" onclick="nav('projects')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Work</button>
+    <button class="mnb" data-page="contact" onclick="nav('contact')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Contact</button>
+  </div>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
